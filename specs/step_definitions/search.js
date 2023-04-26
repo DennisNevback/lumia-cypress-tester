@@ -16,7 +16,7 @@ Then('I should see the product {string}', (productName) => {
   // and check that the product is visible
   cy.get('div.product h2')
     .contains(productName)
-    .parents('div.product')
+    .parentsUntil('div.product')
     .should('be.visible');
 });
 

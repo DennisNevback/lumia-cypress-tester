@@ -27,6 +27,7 @@ When('I click the buy button {string} time', (clickCount) => {
       .find('button').contains('Köp')
       // and click the button
       .click();
+    console.log(clickCount)
   }
 });
 
